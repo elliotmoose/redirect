@@ -1,4 +1,10 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import * as React from 'react';
 
-window.location.href = "https://www.google.com"
+const redirectComp = () => {
+  React.useEffect(()=>{
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  })
+  return <div/>
+}
+
+export default redirectComp;
